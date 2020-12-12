@@ -13,7 +13,7 @@ rm -rf /tmp/frp
 install -d /usr/local/etc/frp
 cat << EOF > /usr/local/etc/frp/frps.ini
 [common]
-bind_port = $FRPPORT
+kcp_bind_port  = $FRPPORT
 vhost_http_port = 443
 EOF
 
